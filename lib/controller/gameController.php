@@ -23,8 +23,9 @@ class gameController extends Controller {
           $this->playersModel->receiveCard($idPlayer,$this->cardsModel->serveCard());
         }
       }
+      return true;
     }
-    
+
     public function getGameStatus() {
       $text = "Status report: ";
 
